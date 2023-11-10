@@ -9,20 +9,15 @@ body {
     background-color: lightbrown;
 }
 
-h1, h2 {
+h1 {
     font-family: 'Roboto', sans-serif;
     color: rgb(148, 126, 78);
     text-align: center;
 }
 
-h2 {
-    font-size: 1.1rem;
-}
-
 p {
     font-size: 1.0rem;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin: 20px 10px;
     letter-spacing: 1px;
 }
 
@@ -35,12 +30,16 @@ a:hover {
     text-decoration: none;
 }
 
-ul {
-    margin-left: 40px;
+table {
+    display: flex;
+    border-collapse: collapse;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
-li {
-    margin-bottom: 10px;
+th, td {
+    border: 1px solid black;
+    padding: 10px;
 }
 
 .navbar {
@@ -62,7 +61,7 @@ header {
 
 main {
     display: grid;
-    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-columns: 1fr 2fr 1fr;
 }
 
 .nav-item {
@@ -78,6 +77,14 @@ a:focus{
     outline:none;
 }
 
-.top-10 {
+.staff-description {
+    grid-column: 1/2; 
+    grid-row: 1/2;
+}
+
+.staff-list {
     font-size: 1.0rem;
+    margin-top: 15px;
+    grid-column: 2/3;
+    grid-row: 1/2;
 }
