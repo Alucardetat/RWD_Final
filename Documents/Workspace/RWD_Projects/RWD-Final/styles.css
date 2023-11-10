@@ -18,7 +18,7 @@ h2 {
     font-size: 1.1rem;
 }
 .top-10{
-
+    
 }
 p {
     font-size: 1.0rem;
@@ -76,4 +76,7 @@ main {
 }
 a:focus{
     outline:none;
+}
+.course-description {
+    
 }
